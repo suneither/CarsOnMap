@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:weightSum="1.0"
+    android:layout_height="100dp">
+
+        <ImageView
+            android:id="@+id/carImage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".55"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight=".45"
+            android:weightSum="1.0"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/modelText"
+                android:paddingLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".25"
+                android:text="Model: Nissan"/>
+
+            <TextView
+                android:id="@+id/plateNrText"
+                android:paddingLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".25"
+                android:text="Plate nr: ADS:254"/>
+
+            <TextView
+                android:id="@+id/batteryLeftText"
+                android:paddingLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.25"
+                android:text="Battery left: 84%"/>
+
+            <TextView
+                android:id="@+id/kmToGoText"
+                android:paddingLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.25"
+                android:text="Km. to go: 152km."/>
+
+        </LinearLayout>
+
+</LinearLayout>

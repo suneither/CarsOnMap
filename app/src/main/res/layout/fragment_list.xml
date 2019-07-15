@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".ListController">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.0">
+
+            <Spinner android:id="@+id/batteryListSpinner"
+                android:layout_width="0dp"
+                android:layout_weight=".7"
+                android:layout_height="48dp"
+                />
+
+            <EditText android:id="@+id/plateNrEditText"
+                android:layout_weight=".3"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:hint="Plate Nr"/>
+
+        </LinearLayout>
+
+        <ListView android:id="@+id/carsListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ListView>
+    </LinearLayout>
+</FrameLayout>
